@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Pseudo-elements Part 1</title>
+  <style>
+    body {
+      font-family: arial;
+      background-color: lightgray;
+      
+    }
+    
+    link-download {
+      text-decoration: none;
+      color: gray;
+      font-weight: bold;
+      background-color: lightgray;
+      padding: 10px;
+      border-radius: 5px;
+      
+      
+    }
+    
+    .link download::before {
+      content: " 🥴 ";
+      
+    }
+    
+    .materi-baru:: after {
+      content: " [BARU]";
+      color: red;
+      font-size: 0.7em;
+      font-weight: bold;
+      
+      
+    }
+    
+    .kutipan-keren {
+      font-style: italic;
+      color: gray;
+      background-color: white ;
+      padding: 15px;
+      Border-left: 40px-solid darkorange;
+      display: inline-block;
+    }
+    
+    .kutipan-keren::before {
+      content: "☄";
+      color: darkorange;
+      font-size: 1,5em;
+      
+    }
+    
+    .artikel-wpu {
+      
+      line-height :1.6;
+      max-width: 600px;
+      background-color: white ;
+      padding: 20px;
+      Border-radius: 5px;
+      border-left: 5px solid darkorange;
+      
+    }
+    
+    .artikel-wpu::first-latter {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: darkorange;
+      
+      
+    }
+    
+    .artikel-wpu::first-line {
+      font-weight: bold;
+      color: gray;
+      letter-spacing: 5px;
+      
+      
+    }
+    
+    .artikel-wpu::selection {
+      background-color: orang;
+      color: white ;
+      
+    }
+    
+    .input-pencarian {
+      padding: 12px;
+      border: 2px solid lightgrey;
+      
+    }
+    
+    
+    .input-pencarian {
+      Border-color: darkorange;
+      outline: none;
+    }
+    
+    .input-pencarian::placeholder {
+      color: darkorange;
+      font-style: italic ;
+      letter-spacing: 1px;
+      
+      
+      
+      
+    }
+    
+    .input-pencarian:focus::placeholder {
+      color: transparent;
+      
+      
+    }
+    
+    
+    
+    
+    
+    
+  </style>
+  
+  
+</head>
+
+<body>
+
+  <h1>Playground Pseudo-elements</h1>
+
+  <h2>1. Konten Tambahan (::before, ::after)</h2>
+
+  <a href="#" class="link-download">Download Source Code</a>
+  <br><br>
+
+  <ul>
+    <li>HTML Dasar</li>
+    <li>CSS Layouting <span class="materi-baru"></span></li>
+    <li>JavaScript DOM</li>
+  </ul>
+
+  <div class="kutipan-keren">
+    Ngoding itu mudah, yang susah itu cari bug-nya kalau lupa titik koma.
+  </div>
+
+
+  <h2>2. Tipografi dan Teks (::first-letter, ::first-line, ::selection)</h2>
+
+  <p class="artikel-wpu">
+    Halo Pasukan Titik Koma! Selamat datang di seri tutorial WPU. Pada bagian ini, kita akan belajar bagaimana
+    memanipulasi tampilan teks menggunakan pseudo-elements tanpa perlu menambah tag span di HTML. Coba kecilkan jendela
+    browser Anda dan lihat bagaimana baris pertama secara otomatis menyesuaikan efek tebalnya. Jangan lupa, coba blok
+    (sorot) paragraf ini untuk melihat efek dari pseudo-element selection.
+  </p>
+
+
+  <h2>3. Formulir (::placeholder)</h2>
+
+  <p>Coba klik input di bawah ini, perhatikan gaya teks placeholder-nya dan bagaimana ia menghilang saat kursor aktif.
+  </p>
+  <form>
+    <input type="text" class="input-pencarian" placeholder="Cari video tutorial WPU di sini...">
+  </form>
+
+</body>
+
+</html>
+Read-only
+Belajar Web Dasar
+
+Chapter 0: Introduction
+2 / 2 Content
+
+Chapter 2: Persiapan Environment
+0 / 5 Content
+
+Chapter 5: HTML Semantic
+1 / 3 Content
+
+Chapter 6: HTML Table & Form
+8 / 8 Content
+
+Chapter 7: Studi Kasus 1 - HTML (Landing Page)
+2 / 2 Content
+
+Chapter 8: CSS Dasar
+3 / 14 Content
+9.1 Simple Selectors
+
+20:37
+
+9.2 Pseudo Selectors 1 - Pseudo Class (:)
+
+28:45
+
+9.3 Pseudo Selectors 2 - Pseudo Element (::)
+
+18:44
+
+9.4 Pseudo Selectors 3 - Smart Selector (Functional)
+
+14:45
+
+9.5 Complex Selectors (Combinators & Compound)
+
+12:53
+
+
+Chapter 12: Studi Kasus 2 - CSS
+0 / 2 Content
+
+Chapter 13: CSS Basic Layouting
+0 / 6 Content
+
+Chapter 14: Advanced Layouting (Flexbox & Grid)
+0 / 7 Content
+
+Chapter 
